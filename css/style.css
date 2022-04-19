@@ -1,0 +1,227 @@
+*{
+ margin:0px;
+ padding:0px;
+}
+:root{
+    --navbar-height:59px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    position: relative;
+}
+#logo{
+    margin: 0px;
+    margin-left: 10px;
+}
+#logo img{
+    margin: 6px;
+    height:89px;
+
+    /* padding:24 px 2x; */
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px;
+}
+
+#navbar ul:first-child{
+    margin-left: -6px;
+    
+}
+ #navbar::before{
+ content: "";
+ background-color: black;
+ position:absolute;
+ height: 90%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.5;
+ top: 0px;
+ left: 0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display:block;
+    padding: 2px 40px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+   /* border:2px solid red; */
+}
+#home{
+    display:flex;
+    height: 520px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+ content: "";
+ background: url('../img/img4.jpg') no-repeat center center/cover;
+ position:absolute;
+ top: 0px;
+ height: 110%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#services{
+    margin: 20px;
+    display:flex;
+    flex-direction: row;
+    
+}
+#services .box{
+    /* border: 2px solid #fa8484; */
+     box-shadow: 12px -4px 14px #755a4f;
+    padding: 34px;
+    margin: 15px 23px;
+    border-radius: 20px;
+    background: #f1e4e4;
+}
+
+#services .box img{
+    height: 124px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* client section */
+#client-section{
+height: 700px;
+position: relative;
+}
+#client-section::before{
+   content:"" ;
+   background:url('../img/img5.jpg') no-repeat center center/cover;
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+} 
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 85px 34px;
+    /* height: 100px;
+    width: 315px; */
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 34px;
+
+}
+
+#client-section .center{
+    padding: 23px 6px;
+    height: 3px;
+    font-size: 41px;
+}
+#client-item img{
+    height: 67px;
+    width: 69px;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    justify-content: center;
+    background: url('../img/logocontact.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 78%;
+    /* padding: 1.5rem; */
+    border-radius: 9px;
+    font-size: 1.4;
+}  
+contact-box form{
+width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.8rem;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 43px;
+    height: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px #f1b464;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+    padding: 0px 12px;
+    border: 2px solid white;
+    background-color: #a46231;
+    color: white;
+    margin: 8px ;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
